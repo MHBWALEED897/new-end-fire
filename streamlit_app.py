@@ -27,7 +27,7 @@ custom_css = """
     
     /* Background Image */
     .stApp {
-        background-image: url('https://i.postimg.cc/90Tg7ngL/228248c95e06fd0bf5da9241cf7a4886.jpg');
+        background-image: url('https://ibb.co/TxRhXdkx][img]https://i.ibb.co/TxRhXdkx/20e8bf8d580b961bcfdb2de533eed98e.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -49,7 +49,7 @@ custom_css = """
     
     .main-header {
     background: rgba(255, 255, 255, 0.15);
-    background-image: url("https://i.postimg.cc/Zq4ZMNyz/546c121c192e6a7a8e88bec385d375d5.jpg");
+    background-image: url("https://ibb.co/QvRMwgw8][img]https://i.ibb.co/QvRMwgw8/1b4ab5b4c894b66060ccd1c64200e71b.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
