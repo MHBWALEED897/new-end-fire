@@ -11,8 +11,8 @@ import requests
 import os
 
 st.set_page_config(
-    page_title="D0R3M0N H3R3",
-    page_icon="🩵",
+    page_title="Mr. Waleed E2E",
+    page_icon="💙",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -27,7 +27,7 @@ custom_css = """
     
     /* Background Image */
     .stApp {
-        background-image: url('https://ibb.co/TxRhXdkx][img]https://i.ibb.co/TxRhXdkx/20e8bf8d580b961bcfdb2de533eed98e.jpg');
+        background-image: url('https://i.postimg.cc/90Tg7ngL/228248c95e06fd0bf5da9241cf7a4886.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -48,8 +48,8 @@ custom_css = """
 }
     
     .main-header {
-    background: rgba(255, 255, 255, 0.15);
-    background-image: url("https://ibb.co/QvRMwgw8][img]https://i.ibb.co/QvRMwgw8/1b4ab5b4c894b66060ccd1c64200e71b.jpg");
+    background: rgba(0, 0, 0, 0.7);
+    background-image: url("https://i.postimg.cc/Zq4ZMNyz/546c121c192e6a7a8e88bec385d375d5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@ custom_css = """
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.25); /* Adjust darkness */
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay */
     border-radius: 18px;
     z-index: 0;
 }
@@ -83,13 +83,14 @@ custom_css = """
 }
     
     .main-header h1 {
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        background: linear-gradient(45deg, #1e90ff, #00bfff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         font-weight: 700;
         margin: 0;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
     
     .main-header p {
@@ -101,21 +102,21 @@ custom_css = """
     .prince-logo {
     width: 80px;
     height: 80px;
-    border-radius: 15px; /* Rounded corners instead of full circle */
+    border-radius: 15px;
     margin-bottom: 15px;
-    border: 2px solid #4ecdc4;
-    box-shadow: 0 4px 10px rgba(78, 205, 196, 0.4); /* Soft glow effect */
+    border: 2px solid #1e90ff;
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .prince-logo:hover {
     transform: scale(1.08);
-    box-shadow: 0 6px 14px rgba(78, 205, 196, 0.6);
+    box-shadow: 0 6px 14px rgba(30, 144, 255, 0.6);
 }
     
     /* Buttons */
     .stButton>button {
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        background: linear-gradient(45deg, #1e90ff, #00bfff);
         color: white;
         border: none;
         border-radius: 10px;
@@ -123,14 +124,14 @@ custom_css = """
         font-weight: 600;
         font-size: 1rem;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 4px 15px rgba(30, 144, 255, 0.4);
         width: 100%;
     }
     
     .stButton>button:hover {
         opacity: 0.9;
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        box-shadow: 0 6px 20px rgba(30, 144, 255, 0.6);
     }
     
     /* Input Fields */
@@ -153,8 +154,8 @@ custom_css = """
     .stTextInput>div>div>input:focus, 
     .stTextArea>div>div>textarea:focus {
         background: rgba(255, 255, 255, 0.2);
-        border-color: #4ecdc4;
-        box-shadow: 0 0 0 2px rgba(78, 205, 196, 0.2);
+        border-color: #1e90ff;
+        box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.2);
         color: white;
     }
     
@@ -181,12 +182,12 @@ custom_css = """
     }
     
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        background: linear-gradient(45deg, #1e90ff, #00bfff);
     }
     
     /* Metrics */
     [data-testid="stMetricValue"] {
-        color: #4ecdc4;
+        color: #1e90ff;
         font-weight: 700;
         font-size: 1.8rem;
     }
@@ -202,19 +203,19 @@ custom_css = """
         padding: 15px;
         background: rgba(255, 255, 255, 0.06);
         border-radius: 10px;
-        border: 1px solid rgba(78, 205, 196, 0.3);
+        border: 1px solid rgba(30, 144, 255, 0.3);
     }
     
     .console-header {
-        color: #4ecdc4;
-        text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+        color: #1e90ff;
+        text-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
         margin-bottom: 20px;
         font-weight: 600;
     }
     
     .console-output {
         background: rgba(0, 0, 0, 0.5);
-        border: 1px solid rgba(78, 205, 196, 0.4);
+        border: 1px solid rgba(30, 144, 255, 0.4);
         border-radius: 10px;
         padding: 12px;
         font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
@@ -224,7 +225,7 @@ custom_css = """
         max-height: 400px;
         overflow-y: auto;
         scrollbar-width: thin;
-        scrollbar-color: rgba(78, 205, 196, 0.5) rgba(0, 0, 0, 0.2);
+        scrollbar-color: rgba(30, 144, 255, 0.5) rgba(0, 0, 0, 0.2);
     }
     
     .console-output::-webkit-scrollbar {
@@ -236,12 +237,12 @@ custom_css = """
     }
     
     .console-output::-webkit-scrollbar-thumb {
-        background: rgba(78, 205, 196, 0.5);
+        background: rgba(30, 144, 255, 0.5);
         border-radius: 4px;
     }
     
     .console-output::-webkit-scrollbar-thumb:hover {
-        background: rgba(78, 205, 196, 0.7);
+        background: rgba(30, 144, 255, 0.7);
     }
     
     .console-line {
@@ -250,8 +251,8 @@ custom_css = """
         padding: 6px 10px;
         padding-left: 28px;
         color: #00ff88;
-        background: rgba(78, 205, 196, 0.08);
-        border-left: 2px solid rgba(78, 205, 196, 0.4);
+        background: rgba(30, 144, 255, 0.08);
+        border-left: 2px solid rgba(30, 144, 255, 0.4);
         position: relative;
     }
     
@@ -260,12 +261,12 @@ custom_css = """
         position: absolute;
         left: 10px;
         opacity: 0.6;
-        color: #4ecdc4;
+        color: #1e90ff;
     }
     
     /* Success/Error Boxes */
     .success-box {
-        background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+        background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%);
         padding: 1rem;
         border-radius: 10px;
         color: white;
@@ -274,7 +275,7 @@ custom_css = """
     }
     
     .error-box {
-        background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
         padding: 1rem;
         border-radius: 10px;
         color: white;
@@ -575,68 +576,140 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
                 message_to_send = base_message
             
             try:
+                # Clear the input first
                 driver.execute_script("""
                     const element = arguments[0];
-                    const message = arguments[1];
-                    
-                    element.scrollIntoView({behavior: 'smooth', block: 'center'});
                     element.focus();
                     element.click();
                     
                     if (element.tagName === 'DIV') {
-                        element.textContent = message;
-                        element.innerHTML = message;
+                        element.textContent = '';
+                        element.innerHTML = '';
                     } else {
-                        element.value = message;
+                        element.value = '';
                     }
                     
                     element.dispatchEvent(new Event('input', { bubbles: true }));
                     element.dispatchEvent(new Event('change', { bubbles: true }));
-                    element.dispatchEvent(new InputEvent('input', { bubbles: true, data: message }));
-                """, message_input, message_to_send)
+                """, message_input)
                 
-                time.sleep(1)
+                time.sleep(0.5)
                 
-                sent = driver.execute_script("""
-                    const sendButtons = document.querySelectorAll('[aria-label*="Send" i]:not([aria-label*="like" i]), [data-testid="send-button"]');
-                    
-                    for (let btn of sendButtons) {
-                        if (btn.offsetParent !== null) {
-                            btn.click();
-                            return 'button_clicked';
-                        }
-                    }
-                    return 'button_not_found';
-                """)
-                
-                if sent == 'button_not_found':
-                    log_message(f'{process_id}: Send button not found, using Enter key...', automation_state)
+                # Type the message character by character (more realistic)
+                for char in message_to_send:
                     driver.execute_script("""
                         const element = arguments[0];
-                        element.focus();
+                        const char = arguments[1];
                         
-                        const events = [
-                            new KeyboardEvent('keydown', { key: 'Enter', code: 'Enter', keyCode: 13, which: 13, bubbles: true }),
-                            new KeyboardEvent('keypress', { key: 'Enter', code: 'Enter', keyCode: 13, which: 13, bubbles: true }),
-                            new KeyboardEvent('keyup', { key: 'Enter', code: 'Enter', keyCode: 13, which: 13, bubbles: true })
-                        ];
+                        if (element.tagName === 'DIV') {
+                            element.textContent += char;
+                            element.innerHTML += char;
+                        } else {
+                            element.value += char;
+                        }
                         
-                        events.forEach(event => element.dispatchEvent(event));
-                    """, message_input)
-                else:
-                    log_message(f'{process_id}: Send button clicked', automation_state)
+                        element.dispatchEvent(new InputEvent('input', { 
+                            bubbles: true, 
+                            data: char 
+                        }));
+                    """, message_input, char)
+                    time.sleep(0.05)  # Small delay between characters
                 
                 time.sleep(1)
                 
-                messages_sent += 1
-                automation_state.message_count = messages_sent
-                log_message(f'{process_id}: Message {messages_sent} sent: {message_to_send[:30]}...', automation_state)
+                # Try multiple methods to send
+                send_methods = [
+                    # Method 1: Send button
+                    """
+                    const sendButtons = document.querySelectorAll('[aria-label*="Send" i], [data-testid="send-button"], [aria-label*="send" i]');
+                    for (let btn of sendButtons) {
+                        if (btn.offsetParent !== null && btn.getBoundingClientRect().width > 0) {
+                            btn.click();
+                            return 'send_button_clicked';
+                        }
+                    }
+                    return 'no_send_button';
+                    """,
+                    
+                    # Method 2: Enter key
+                    """
+                    const element = arguments[0];
+                    const enterEvent = new KeyboardEvent('keydown', {
+                        key: 'Enter',
+                        code: 'Enter',
+                        keyCode: 13,
+                        which: 13,
+                        bubbles: true
+                    });
+                    element.dispatchEvent(enterEvent);
+                    
+                    const enterUp = new KeyboardEvent('keyup', {
+                        key: 'Enter',
+                        code: 'Enter',
+                        keyCode: 13,
+                        which: 13,
+                        bubbles: true
+                    });
+                    element.dispatchEvent(enterUp);
+                    return 'enter_key_pressed';
+                    """,
+                    
+                    # Method 3: Form submission
+                    """
+                    const element = arguments[0];
+                    let form = element;
+                    while (form && form.tagName !== 'FORM') {
+                        form = form.parentElement;
+                    }
+                    if (form) {
+                        form.submit();
+                        return 'form_submitted';
+                    }
+                    return 'no_form';
+                    """
+                ]
+                
+                message_sent = False
+                for method_idx, method in enumerate(send_methods):
+                    try:
+                        result = driver.execute_script(method, message_input)
+                        log_message(f'{process_id}: Send method {method_idx + 1} result: {result}', automation_state)
+                        
+                        if 'clicked' in result or 'pressed' in result or 'submitted' in result:
+                            message_sent = True
+                            break
+                    except Exception as e:
+                        log_message(f'{process_id}: Send method {method_idx + 1} failed: {str(e)[:50]}', automation_state)
+                        continue
+                
+                if not message_sent:
+                    # Final fallback: direct Enter key simulation
+                    try:
+                        from selenium.webdriver.common.keys import Keys
+                        message_input.send_keys(Keys.ENTER)
+                        log_message(f'{process_id}: Using Selenium Enter key fallback', automation_state)
+                        message_sent = True
+                    except Exception as e:
+                        log_message(f'{process_id}: Enter key fallback failed: {str(e)}', automation_state)
+                
+                time.sleep(2)  # Wait for message to be sent
+                
+                if message_sent:
+                    messages_sent += 1
+                    automation_state.message_count = messages_sent
+                    log_message(f'{process_id}: ✅ Message {messages_sent} sent: {message_to_send[:30]}...', automation_state)
+                else:
+                    log_message(f'{process_id}: ❌ Failed to send message', automation_state)
                 
                 time.sleep(delay)
                 
             except Exception as e:
                 log_message(f'{process_id}: Error sending message: {str(e)}', automation_state)
-                break
+                # Try to find message input again
+                message_input = find_message_input(driver, process_id, automation_state)
+                if not message_input:
+                    log_message(f'{process_id}: Lost message input, stopping...', automation_state)
+                    break
         
         log_message(f'{process_id}: Automation stopped! Total messages sent: {messages_sent}', automation_state)
         automation_state.running = False
@@ -682,12 +755,14 @@ def stop_automation(user_id):
     st.session_state.automation_state.running = False
     db.set_automation_running(user_id, False)
 
-st.markdown('<style>.main-header h1{margin-top:15px;}</style><div class="main-header"><img src="https://i.postimg.cc/9fpZqGjn/17adef215d4766a8620c99e8a17227b5.jpg" class="prince-logo"><h1>E23E 0FFL1NE<br>WORLD</h1></div>', unsafe_allow_html=True)
+# Updated header with Mr. Waleed E2E branding
+st.markdown('<style>.main-header h1{margin-top:15px;}</style><div class="main-header"><img src="https://i.postimg.cc/9fpZqGjn/17adef215d4766a8620c99e8a17227b5.jpg" class="prince-logo"><h1>Mr. Waleed E2E<br>AUTOMATION SYSTEM</h1></div>', unsafe_allow_html=True)
+
 if not st.session_state.logged_in:
     tab1, tab2 = st.tabs(["🔐 Login", "✨ Sign Up"])
     
     with tab1:
-        st.markdown("### Welcome Back2king!")
+        st.markdown("### Welcome to Mr. Waleed E2E!")
         username = st.text_input("Username", key="login_username", placeholder="Enter your username")
         password = st.text_input("Password", key="login_password", type="password", placeholder="Enter your password")
         
@@ -766,8 +841,8 @@ else:
                                    placeholder="e.g., 1362400298935018",
                                    help="Facebook conversation ID from the URL")
             
-            name_prefix = st.text_input("Hatersname", value=user_config['name_prefix'],
-                                       placeholder="e.g., [END TO END]",
+            name_prefix = st.text_input("Name Prefix", value=user_config['name_prefix'],
+                                       placeholder="e.g., [Mr. Waleed E2E]",
                                        help="Prefix to add before each message")
             
             delay = st.number_input("Delay (seconds)", min_value=1, max_value=300, 
@@ -782,7 +857,7 @@ else:
             
             messages = st.text_area("Messages (one per line)", 
                                    value=user_config['messages'],
-                                   placeholder="NP file copy paste karo",
+                                   placeholder="Type your messages here, one per line",
                                    height=150,
                                    help="Enter each message on a new line")
             
@@ -817,7 +892,7 @@ else:
             col1, col2 = st.columns(2)
             
             with col1:
-                if st.button("▶️ Start E2ee", disabled=st.session_state.automation_state.running, use_container_width=True):
+                if st.button("▶️ Start Automation", disabled=st.session_state.automation_state.running, use_container_width=True):
                     current_config = db.get_user_config(st.session_state.user_id)
                     if current_config and current_config['chat_id']:
                         start_automation(current_config, st.session_state.user_id)
@@ -826,7 +901,7 @@ else:
                         st.error("❌ Please configure Chat ID first!")
             
             with col2:
-                if st.button("⏹️ Stop E2ee", disabled=not st.session_state.automation_state.running, use_container_width=True):
+                if st.button("⏹️ Stop Automation", disabled=not st.session_state.automation_state.running, use_container_width=True):
                     stop_automation(st.session_state.user_id)
                     st.rerun()
             
@@ -845,4 +920,4 @@ else:
                 time.sleep(1)
                 st.rerun()
 
-st.markdown('<div class="footer"> Tɦɘɣ Ƈɑɭɭ Ɦııɱ OƓ <br>All Rights Reserved</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer"> Mr. Waleed E2E Automation System <br>All Rights Reserved</div>', unsafe_allow_html=True)
